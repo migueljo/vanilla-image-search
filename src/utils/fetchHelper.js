@@ -1,4 +1,4 @@
-import config from "../config"
+import config from "./config"
 
 function fetchHelper(url, options = {}) {
   const _options = {

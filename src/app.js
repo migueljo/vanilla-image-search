@@ -1,13 +1,13 @@
 import _ from 'lodash'
-import api from './api'
 import delegate from 'delegate'
+
+import api from './api'
 
 const searchElm = document.querySelector('#search')
 const imageListElm = document.querySelector('#image-list')
 const dialogElm = document.querySelector('#image-dialog')
 const closeDialogElm = document.querySelector('#image-dialog-close')
 const imageDialog = document.querySelector('#image-dialog-image')
-
 let imageList = []
 
 const handleSearchChange = _.debounce(async (event) => {
